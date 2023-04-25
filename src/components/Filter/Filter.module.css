@@ -1,0 +1,33 @@
+.wrapper {
+  width: 400px;
+  height: 107px;
+  border: 1px solid #7b605f;
+  padding: 10px;
+  margin: 41px;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(240, 240, 240, 0.9) 0%,
+    rgba(86, 91, 92, 0.2) 10%,
+    rgba(197, 197, 218, 0.5) 50%,
+    rgba(0, 212, 255, 0.2) 90%,
+    rgba(240, 240, 240, 0.9) 100%
+  );
+}
+.label {
+  display: block;
+  font-size: 20px;
+}
+.input {
+  display: flex;
+  margin-top: 10px;
+  width: 183px;
+  background: linear-gradient(
+    90deg,
+    rgba(240, 240, 240, 0.9) 0%,
+    rgba(86, 91, 92, 0.2) 10%,
+    rgba(197, 197, 218, 0.5) 50%,
+    rgba(0, 212, 255, 0.2) 90%,
+    rgba(240, 240, 240, 0.9) 100%
+  );
+}
