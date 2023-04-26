@@ -1,11 +1,7 @@
 import { createSlice, nanoid } from '@reduxjs/toolkit';
 
-const contactsInitialState = () => {
-  return [
-    { id: '0', name: 'John Doe', number: '11111111111' },
-    { id: '1', name: 'Bob Marley', number: '222 222 222' },
-  ];
-};
+const contactsInitialState = JSON.parse(localStorage.getItem('CONTACTS')) || [];
+
 export const contactsSlice = createSlice({
   name: 'contacts',
   initialState: contactsInitialState,
@@ -29,9 +25,9 @@ export const contactsSlice = createSlice({
           alert(`Number ${action.payload.number} is already in contacts`);
           return;
         }
+
         state.push(action.payload);
       },
-
       prepare(name, number) {
         return {
           payload: {
